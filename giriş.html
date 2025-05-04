@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Formu</title>
+    <style>
+        body {
+            font-family: Tahoma, Geneva, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            background-color: #DDA0DD;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        ul li {
+          float: left;
+            background-color: #DDA0DD;
+            border-bottom: 3px solid #DDA0DD;
+        }
+        ul li.menu-right {
+            float: right;
+        }
+        ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #FFF;
+            font-size: 18px;
+            margin: 0 10px ;
+        }
+       
+       
+        .form-container {
+            margin: 150px auto;
+            width: 400px;
+            padding: 20px;
+            background-color: #CC99FF;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #6A5ACD;
+            color: #FFF;
+            border: none;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #483D8B;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menü -->
+<ul>
+    <li class="active"><a href="esra.html">Anasayfa</a></li>
+    <li class="menu-right"><a href="KAYDOL.html">Kaydol</a></li>
+    <li class="menu-right"><a href="giriş.html">Giriş</a></li>
+</ul>
+
+<!-- Giriş Formu -->
+<div class="form-container">
+    <form action="c:\Users\ESO\Desktop\kaydol2.php" method="post">
+        <label for="ADSOYAD">Ad Soyad</label>
+        <input type="text" id="ADSOYAD" name="ADSOYAD" required>
+
+        <label for="KULLANICIADI">Kullanıcı Adı</label>
+        <input type="text" id="KULLANICIADI" name="KULLANICIADI" required>
+
+        <label for="ŞİFRE">Şifre</label>
+        <input type="password" id="ŞİFRE" name="ŞİFRE" required>
+
+        <input type="submit" value="Giriş">
+    </form>
+</div>
+
+</body>
+</html>
